@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.permission"
-    compileSdk = 33
+    compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
