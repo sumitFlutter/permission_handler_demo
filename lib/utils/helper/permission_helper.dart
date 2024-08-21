@@ -13,7 +13,7 @@ class PermissionHelper{
     lP=loc.isGranted;
     var storage =await Permission.storage.status;
     sP=storage.isGranted;
-    var audio =await Permission.audio.status;
+    var audio =await Permission.microphone.status;
     aP=audio.isGranted;
   }
   Future<String> cR()
@@ -60,14 +60,14 @@ class PermissionHelper{
   }
   Future<String> aR()
   async {
-    if(await Permission.audio.request().isGranted)
+    if(await Permission.microphone.request().isGranted)
     {
-      var camera=await Permission.audio.status;
+      var camera=await Permission.microphone.status;
       aP=camera.isGranted;
       return "Granted";
     }
     else{
-      var camera=await Permission.audio.status;
+      var camera=await Permission.microphone.status;
       aP=camera.isGranted;
       return "Denied";
     }

@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         String s1 =
                             await PermissionHelper.permissionHelper.cR();
                         ScaffoldMessenger.of(context)
-                            .showSnackBar(SnackBar(content: Text(s1)));
+                            .showSnackBar(SnackBar(content: Text(s1),duration: const Duration(seconds: 1),));
                         setState(() {});
                       },
                       icon: const Icon(Icons.add_a_photo),
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         String s1 =
                             await PermissionHelper.permissionHelper.lR();
                         ScaffoldMessenger.of(context)
-                            .showSnackBar(SnackBar(content: Text(s1)));
+                            .showSnackBar(SnackBar(content: Text(s1),duration: const Duration(seconds: 1)));
                         setState(() {});
                       },
                       icon: const Icon(Icons.location_on),
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         String s1 =
                             await PermissionHelper.permissionHelper.sR();
                         ScaffoldMessenger.of(context)
-                            .showSnackBar(SnackBar(content: Text(s1)));
+                            .showSnackBar(SnackBar(content: Text(s1),duration: const Duration(seconds: 1)));
                         setState(() {});
                       },
                       icon: const Icon(Icons.storage),
@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         String s1 =
                             await PermissionHelper.permissionHelper.aR();
                         ScaffoldMessenger.of(context)
-                            .showSnackBar(SnackBar(content: Text(s1)));
+                            .showSnackBar(SnackBar(content: Text(s1),duration: const Duration(seconds: 1)));
 
                         setState(() {});
                       },
